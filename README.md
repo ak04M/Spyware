@@ -23,16 +23,27 @@ This project is a modular spyware framework for macOS, designed for ethical hack
 
 ## 📁 Project Structure
 
-<p>
-spyware-mac/ 
-├── spyware.py ← main script 
-├── create_persistence.py ← sets up LaunchAgent
-├── modules/ ← separate feature modules
-├── logs/ ← stored data (ignored in repo)
-├── LICENSE
-├── README.md
-└── requirements.txt
-</p>
+spyware-mac/
+├── spyware.py                # Main launcher script (calls all modules)
+├── create_persistence.py     # Auto-generates LaunchAgent plist
+├── requirements.txt          # List of dependencies
+├── README.md                 # Full project explanation
+├── LICENSE                   # "Ethical red team use only" license
+├── .gitignore                # Prevents logs/screenshots from being committed
+├── modules/                  # Core functionality modules
+│   ├── keylogger.py
+│   ├── mouse_logger.py
+│   ├── clipboard_logger.py
+│   ├── screenshotter.py
+│   ├── window_tracker.py
+│   ├── system_info.py
+│   ├── exfil.py
+│   └── logger_utils.py
+└── logs/                     # Local output storage (ignored in Git)
+    ├── activity.log
+    ├── screenshot_*.png
+    └── system.txt
+
 
 
 ## 🚨 Disclaimer
