@@ -23,6 +23,7 @@ This project is a modular spyware framework for macOS, designed for ethical hack
 
 ## 📁 Project Structure
 
+<PRE><CODE>
 spyware-mac/
 ├── spyware.py                # Main launcher script (calls all modules)
 ├── create_persistence.py     # Auto-generates LaunchAgent plist
@@ -43,7 +44,7 @@ spyware-mac/
     ├── activity.log
     ├── screenshot_*.png
     └── system.txt
-
+</CODE></PRE>
 
 
 ## 🚨 Disclaimer
