@@ -1,0 +1,10 @@
+pynput
+pyobjc
+requests
+pyperclip
+zipfile
+logger_utils
+AppKit
+pyautogui
+threading
+sockets
